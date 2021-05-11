@@ -6,7 +6,13 @@
   ],
   "readmeFilename": "README.md",
   "dependencies": {
-    "ember-cli-babel": "5.2.4",
-    "ember-cli-htmlbars": "1.1.1"
-  }
+    "ember-cli-babel": "6.0.0",
+    "ember-cli-htmlbars": "1.1.1",
+    "snyk": "^1.590.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
